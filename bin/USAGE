@@ -12,6 +12,5 @@ USAGE: tile-dl -t 'TEMPLATE' --lat LAT --lon LON --radius RADIUS --zoom ZOOM
   --radius|-r  : The radius, in kilometers, to download around the center
                  latitude and longitude coordinates.
 
-  --zoom|-z    : A range of zoom levels to download, of the form MIN..MAX or
-                 just a single number for no range. Be wary: zoom level N+1
-                 contains 4 times as many tiles as zoom level N.
+  --zoom|-z    : The zoom level of tiles to be downloaded. Be wary: zoom level
+                 N+1 contains 4 times as many tiles as zoom level N.
