@@ -5,8 +5,13 @@ var argv = require('minimist')(process.argv, { alias: minimistAliases })
 var fs = require('fs')
 var path = require('path')
 
-if (!argv.zoom || !argv.lat || !argv.lon || !argv.radius || !argv.template) {
+if (!argv.zoom || !argv.lat || !argv.lon || !argv.radius || !argv.template ||
+  !isTemplateValid(argv.template)) {
   printUsageAndExit()
+}
+
+function isTemplateValid (template) {
+  return /{x}/.test(template) && /{y}/.test(template) && /{z}/.test(template)
 }
 
 function printUsageAndExit () {
