@@ -1,8 +1,11 @@
 {
   "name": "tile-dl",
-  "description": "download map tiles covering an area",
+  "description": "Download map tiles covering an area from a URL template.",
   "author": "Stephen Whitmore <sww@eight.net>",
   "version": "0.0.0",
+  "bin": {
+    "tile-dl": "bin/tile-dl.js"
+  },
   "repository": {
     "url": "git://github.com/noffle/tile-dl.git"
   },
@@ -10,7 +13,6 @@
   "bugs": "https://github.com/noffle/tile-dl/issues",
   "main": "index.js",
   "scripts": {
-    "test": "tape test/*.js",
     "lint": "standard"
   },
   "keywords": [],
@@ -18,7 +20,6 @@
     "minimist": "^1.2.0"
   },
   "devDependencies": {
-    "tape": "~4.6.2",
     "standard": "~10.0.0"
   },
   "license": "ISC"
