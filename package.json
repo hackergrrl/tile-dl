@@ -15,7 +15,15 @@
   "scripts": {
     "lint": "standard"
   },
-  "keywords": [],
+  "keywords": [
+    "tile",
+    "download",
+    "satellite",
+    "aerial",
+    "imagery",
+    "vector",
+    "tms"
+  ],
   "dependencies": {
     "minimist": "^1.2.0"
   },
