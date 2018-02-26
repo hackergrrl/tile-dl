@@ -1,0 +1,18 @@
+USAGE: tile-dl 'TEMPLATE' --lat LAT --lon LON --radius RADIUS
+
+  Recursively downloads tile data (vector, satellite, etc), given a server URL
+  template.
+
+  TEMPLATE   : A URL template. Must contain the markers {x}, {y}, and {zoom}.
+               e.g. http://some.mapservice.com/{zoom}/{x}/{y}.jpg
+
+  --lat      : The center latitude to download tiles from.
+  --lon      : The center longitude to download tiles from.
+
+  --radius|-r: The radius, in kilometers, to download around the center
+               latitude and longitude coordinates.
+
+  --zoom|-z  : A range of zoom levels to download, of the form MIN..MAX or just
+               a single number for no range. Be wary: zoom level N+1 contains 4
+               times as many tiles as zoom level N.
+
