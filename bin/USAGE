@@ -1,10 +1,15 @@
-USAGE: tile-dl -t 'TEMPLATE' --lat LAT --lon LON --radius RADIUS --zoom ZOOM
+USAGE: tile-dl -t 'URL' -o 'OUTPUT' --lat LAT --lon LON --radius R --zoom ZOOM
 
   Recursively downloads tile data (vector, satellite, etc), given a server URL
   template.
 
   --template|-t: A URL template. Must contain the markers {x}, {y}, and {zoom}.
                  e.g. http://some.mapservice.com/{zoom}/{x}/{y}.jpg
+
+  --output|-o  : The directory output template. For example, '{z}/{y}/{x}.png'
+                 will create a directory hierarchy with 'z' at the top, 'y'
+                 inside that, and fill each innermost directory with 'z.png'
+                 files.
 
   --lat        : The center latitude to download tiles from.
   --lon        : The center longitude to download tiles from.
