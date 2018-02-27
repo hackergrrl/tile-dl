@@ -4,7 +4,7 @@
   "author": "Stephen Whitmore <sww@eight.net>",
   "version": "1.0.0",
   "bin": {
-    "tile-dl": "bin/tile-dl.js"
+    "tile-dl": "bin/cmd.js"
   },
   "repository": {
     "url": "git://github.com/noffle/tile-dl.git"
