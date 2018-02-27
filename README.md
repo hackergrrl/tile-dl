@@ -48,8 +48,12 @@ USAGE: tile-dl -t 'URL' -o 'OUTPUT' --lat LAT --lon LON --radius R --zoom ZOOM
 
 ## Example
 
+Let's download the Oakland, California area at zoom level 12:
+
 ```
-$ tile-dl -t 'http://map-r-us.org/{z}/{y}/{x}.png' --lon=-122.2632601 --lat=37.8027446 --radius 0.1 -z 12 -o {z}/{y}/{x}.png
+$ echo 'https://c.tiles.mapbox.com/v4/digitalglobe.0a8e44ba/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZGlnaXRhbGdsb2JlIiwiYSI6ImNqOGRmNW9qZjBudmgzMnA1a294OGRtNm8ifQ.06mo-nDisy4KmqjYxEVwQw' > template
+
+$ tile-dl -t "$(cat template)" --lon=-122.2632601 --lat=37.8027446 --radius 0.1 -z 12 -o {z}/{y}/{x}.png
 ```
 
 this will download map tiles at zoom level in a 0.1km radius around
