@@ -2,7 +2,7 @@
   "name": "tile-dl",
   "description": "Download map tiles covering an area from a URL template.",
   "author": "Stephen Whitmore <sww@eight.net>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bin": {
     "tile-dl": "bin/cmd.js"
   },
